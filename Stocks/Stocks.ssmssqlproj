@@ -28,6 +28,12 @@
           <AssociatedConnUserName />
           <FullPath>InsertTicker.sql</FullPath>
         </FileNode>
+        <FileNode Name="InsertTimeSeriesDataDaily.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MM-LAPTOP:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MM-LAPTOP</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>InsertTimeSeriesDataDaily.sql</FullPath>
+        </FileNode>
         <FileNode Name="Schema.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MM-LAPTOP:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>MM-LAPTOP</AssociatedConnSrvName>
