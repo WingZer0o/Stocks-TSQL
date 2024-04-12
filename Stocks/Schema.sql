@@ -28,3 +28,5 @@ CREATE TABLE TimeSeriesDaily (
 	[Volumne] NVARCHAR(1000) NOT NULL,
 	Ticker UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Tickers(ID)
 );
+
+CREATE UNIQUE INDEX Date_Index ON [dbo].[TimeSeriesDaily] (Date)
