@@ -67,3 +67,5 @@ CREATE TABLE IncomeStatements (
 	NetIncome BIGINT NOT NULL,
 	Ticker UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Tickers(ID)
 );
+
+CREATE UNIQUE INDEX Date_Index ON [dbo].[IncomeStatements] (FiscalDateEnding, Ticker)
