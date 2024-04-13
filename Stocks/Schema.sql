@@ -29,4 +29,4 @@ CREATE TABLE TimeSeriesDaily (
 	Ticker UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Tickers(ID)
 );
 
-CREATE UNIQUE INDEX Date_Index ON [dbo].[TimeSeriesDaily] (Date)
+CREATE UNIQUE INDEX Date_Index ON [dbo].[TimeSeriesDaily] (Date, Ticker)
