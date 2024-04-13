@@ -1,6 +1,11 @@
 USE Stocks;
 GO
 
+IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES where TABLE_NAME = 'IncomeStatements')
+	BEGIN
+		DROP TABLE IncomeStatements;
+	END
+
 IF EXISTS (SELECT 1 FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'TimeSeriesDaily')
 	BEGIN
 		DROP TABLE TimeSeriesDaily;
@@ -31,3 +36,34 @@ CREATE TABLE TimeSeriesDaily (
 );
 
 CREATE UNIQUE INDEX Date_Index ON [dbo].[TimeSeriesDaily] (Date, Ticker)
+
+CREATE TABLE IncomeStatements (
+	ID UNIQUEIDENTIFIER PRIMARY KEY NOT NULL DEFAULT NEWID(),
+	FiscalDateEnding DATETIME NOT NULL,
+	ReportedCurrency NVARCHAR(100) NOT NULL,
+	GrossProfit BIGINT NOT NULL,
+	TotalRevenue BIGINT NOT NULL,
+	CostOfRevenue BIGINT NOT NULL,
+	CostofGoodsAndServicesSold BIGINT NOT NULL,
+	OperatingIncome BIGINT NOT NULL,
+	SellingGeneralAndAdministrative BIGINT NOT NULL,
+	ResearchAndDevelopment BIGINT NOT NULL,
+	OperatingExpenses BIGINT NOT NULL,
+	InvestmentIncomeNet BIGINT NOT NULL,
+	NetInterestIncome BIGINT NOT NULL,
+	InterestIncome BIGINT NOT NULL,
+	InterestExpense BIGINT NOT NULL,
+	NonInterestIncome BIGINT NOT NULL,
+	OtherNonOperatingIncome BIGINT NOT NULL,
+	Depreciation BIGINT NOT NULL,
+	DepreciationAndAmortization BIGINT NOT NULL,
+	IncomeBeforeTax BIGINT NOT NULL,
+	IncomeTaxExpense BIGINT NOT NULL,
+	InterestAndDebtExpense BIGINT NOT NULL,
+	NetIncomeFromContinuingOperations BIGINT NOT NULL,
+	ComprehensiveIncomeNetOfTax BIGINT NOT NULL,
+	Ebit BIGINT NOT NULL,
+	Ebitda BIGINT NOT NULL,
+	NetIncome BIGINT NOT NULL,
+	Ticker UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Tickers(ID)
+);
