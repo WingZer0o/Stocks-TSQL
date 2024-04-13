@@ -27,14 +27,16 @@ GO
 -- Description:	<Gets a set amount of time series data sorted in descending ordering of date>
 -- =============================================
 CREATE PROCEDURE [dbo].[GetTimeSeriesDailyByCount]
-	@TickerID UNIQUEIDENTIFIER,
+	@Ticker NVARCHAR(50),
 	@Count INT
 AS
 BEGIN
 	-- SET NOCOUNT ON added to prevent extra result sets from
 	-- interfering with SELECT statements.
 	SET NOCOUNT ON;
-
-    SELECT TOP (@Count) [Date], [Close], [High], [Low], [Open], [Volumne] from TimeSeriesDaily where Ticker = @TickerID ORDER BY [Date] DESC;
+	DECLARE @TickerID UNIQUEIDENTIFIER;
+	SELECT @TickerID = ID FROM Tickers where Ticker = @Ticker;
+	
+    SELECT TOP (@Count) * from TimeSeriesDaily where Ticker = @TickerID ORDER BY [Date] DESC;
 END
 GO
