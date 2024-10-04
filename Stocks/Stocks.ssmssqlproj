@@ -3,13 +3,13 @@
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
-        <ConnectionNode Name="MM-LAPTOP:MM-LAPTOP\mtmul">
-          <Created>2024-04-10T21:06:18.7271169-04:00</Created>
+        <ConnectionNode Name="MM-DESKTOP:MM-DESKTOP\mtmul">
+          <Created>2024-10-03T21:06:54.0746249-07:00</Created>
           <Type>SQL</Type>
-          <Server>MM-LAPTOP</Server>
+          <Server>MM-DESKTOP</Server>
           <UserName />
           <Authentication>Windows Authentication</Authentication>
-          <InitialDB>Stocks</InitialDB>
+          <InitialDB />
           <LoginTimeout>30</LoginTimeout>
           <TrustServerCertificate>False</TrustServerCertificate>
           <HostNameInServerCertificate />
@@ -23,38 +23,38 @@
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
         <FileNode Name="GetPortfolioTickers.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MM-LAPTOP:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>MM-LAPTOP</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>GetPortfolioTickers.sql</FullPath>
         </FileNode>
         <FileNode Name="GetTimeSeriesDailyByCount.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MM-LAPTOP:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>MM-LAPTOP</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>GetTimeSeriesDailyByCount.sql</FullPath>
         </FileNode>
         <FileNode Name="InsertIncomeStatement.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MM-LAPTOP:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>MM-LAPTOP</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>InsertIncomeStatement.sql</FullPath>
         </FileNode>
         <FileNode Name="InsertTicker.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MM-LAPTOP:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>MM-LAPTOP</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>InsertTicker.sql</FullPath>
         </FileNode>
         <FileNode Name="InsertTimeSeriesDataDaily.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MM-LAPTOP:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>MM-LAPTOP</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MM-DESKTOP:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MM-DESKTOP</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>InsertTimeSeriesDataDaily.sql</FullPath>
         </FileNode>
         <FileNode Name="Schema.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MM-LAPTOP:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>MM-LAPTOP</AssociatedConnSrvName>
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
           <AssociatedConnUserName />
           <FullPath>Schema.sql</FullPath>
         </FileNode>
