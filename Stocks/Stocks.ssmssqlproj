@@ -29,20 +29,20 @@
           <FullPath>GetPortfolioTickers.sql</FullPath>
         </FileNode>
         <FileNode Name="GetTimeSeriesDailyByCount.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MM-DESKTOP:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MM-DESKTOP</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>GetTimeSeriesDailyByCount.sql</FullPath>
         </FileNode>
         <FileNode Name="InsertIncomeStatement.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MM-DESKTOP:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MM-DESKTOP</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>InsertIncomeStatement.sql</FullPath>
         </FileNode>
         <FileNode Name="InsertTicker.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MM-DESKTOP:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MM-DESKTOP</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>InsertTicker.sql</FullPath>
         </FileNode>
@@ -53,8 +53,8 @@
           <FullPath>InsertTimeSeriesDataDaily.sql</FullPath>
         </FileNode>
         <FileNode Name="Schema.sql">
-          <AssociatedConnectionMoniker />
-          <AssociatedConnSrvName />
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:MM-DESKTOP:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>MM-DESKTOP</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>Schema.sql</FullPath>
         </FileNode>
