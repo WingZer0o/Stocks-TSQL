@@ -1,3 +1,10 @@
+USE Stocks
+GO
+
+IF EXISTS (SELECT 1 from sys.objects where name = 'GetTickers')
+	BEGIN
+		DROP PROCEDURE GetTickers;
+	END
 -- ================================================
 -- Template generated from Template Explorer using:
 -- Create Procedure (New Menu).SQL
