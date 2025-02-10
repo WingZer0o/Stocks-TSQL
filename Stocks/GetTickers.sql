@@ -27,6 +27,6 @@ BEGIN
 	SET NOCOUNT ON;
 
     -- Insert statements for procedure here
-	SELECT Ticker FROM Tickers;
+	SELECT * FROM Tickers;
 END
 GO
